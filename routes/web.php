@@ -17,3 +17,7 @@ Route::get('/albert', function () {
     $albert = 'kakashi';
     return $albert;
 });
+Route::get('/variable', function () {
+    $variable = 4;
+    return view('welcome', compact('variable'));
+});
