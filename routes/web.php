@@ -21,3 +21,9 @@ Route::get('/variable', function () {
     $variable = 4;
     return view('welcome', compact('variable'));
 });
+
+Route::get('/',function(){
+    $text = 25;
+    $text2 = 20;
+    return view("home", compact("text","text2"));
+});

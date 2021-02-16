@@ -8,14 +8,19 @@
 </head>
 <body>
     <section>
-        @if ($variable %4 == 0)
-            <p>{{$variable*4}}</p>
+        @if (is_int($text) && is_int($text2))
+            <p>{{$text +  $text2}}</p>
         @else
             <p>Error</p>
         @endif
     </section>
     <section>
-        
+        @if (is_int($text) && is_int($text2))
+            <p>{{$text - $text2}}</p>
+        @else
+            <p>Error</p>
+        @endif
     </section>
+
 </body>
 </html>
